@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="favicon_io/favicon-32x32.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PISALWAN</title>
+</head>
+<body>
+    <!--body-->
+    <!--navigationsflex-->
+    <div class="navflex">
+        <ul>
+            <li><h1>💚PISALWAN</h1></li>
+            <li><a href="#">Home</a></li>
+            <li><input type="text" placeholder="Search..." id="searchinput"></li>
+            <li><button onclick="searchFunction()" id="searchbtn"><i class='bx bx-search' ></i></button></li>
+            <li><button onclick="wishlistfunction()" id="wish"><i class='bx bx-heart' ></i>Wishlist</button></li>
+            <li><button onclick="cartFunction()" id="cart"><i class='bx bx-cart' ></i>Cart</button></li>
+            <li><button onclick="menufunction()" id="menu">Menu<i class='bx bxs-chevron-down' ></i></button></li>
+        </ul>
+    </div>
+    <!--navigationsflex/-->
+
+
+
+<!---chatHlper-->
+<div class="invChat">
+    <button onclick="chatBtn()" id="chatIcon"><i class='bx bx-message-rounded-dots' ></i></button>
+</div>
+<!---done-->
+
+
+
+
+<!---navside-->
+<div class="invnav">
+<div class="navside" id="navside">
+    <ul>
+        <li><div class="category" id="categoriesContainer"></li>
+           <li> <h3>Category</h3></li>
+            <li><div class="categoryline"></div></li>
+           <li><button id="recommended">Recommended</button></li> 
+           <li><button onclick="fetchItems('smartphones')"></button></li>
+           <li><button onclick="getProducts('laptops')"></button></li>
+           <li><button></button></li>
+           <li><button> </button></li>
+           <div id="hiddenbtns">
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button></button></li>
+            <li><button> </button></li>
+            <li><button> </button></li>
+            <li><button> </button></li>
+            <li><button> </button></li>
+            <li><button> </button></li>
+            <li><button> </button></li>
+            <li><button> </button></li>
+            <li><button></button></li>
+           </div>
+          
+    </div>
+    </ul>
+</div>
+</div>
+<!---navside/close-->
+
+
+<!--featured products-->
+<div class="invfc">
+    <div class="featuredContainer">
+        <img id="image" src="imgcard/Apple_Macbook_Pro_2021_10_19_17_09_32.jpg">
+        
+      
+    </div>
+</div>
+<!--button for ads-->
+<div class="invbtn">
+<button onclick="nextads()" id="nad"><i class='bx bx-right-arrow-alt'></i></button>
+<button onclick="backads()" id="nad1"><i class='bx bx-left-arrow-alt' ></i></button>
+</div>
+<!--buttonfor ads-->
+<!--featured products-close-->
+<!--hiddencontainers-->
+
+<!---ChatBotContainer-->
+<div class="invChatContainer">
+    <div id="chatBotContainer" id="chatBotContainer">
+        <div class="chatBotContainerChild">
+            <h1><i class='bx bx-bot' ></i></h1>
+
+        </div>
+
+        <div class="chatOptionsContainer">
+            <button onclick="firstOption()" id="firstOption">Help</button>
+        </div>
+
+    </div>
+    
+</div>
+
+<!---end-->
+
+<!--Search-Wrapper-->
+<div class="invwrapper">
+<div class="wrapper" id="results">
+    <div class="wrapperBox">
+        <div class="wrapperImg">
+        <img src="imgcard/0c27f9d6d4a1b54cbe382e1027b74dc5.png">
+        <div class="descriptionWrapper">
+            <h1>S</h1>
+        </div>
+
+    </div>
+    <div class="wrapperImg">
+        <img src="imgcard/0c27f9d6d4a1b54cbe382e1027b74dc5.png">
+        <div class="descriptionWrapper">
+            <h1>S</h1>
+        </div>
+
+    </div>
+        
+    </div>
+</div>
+
+</div>
+<!--end-->
+
+
+<!---overflow-->
+<div class="overflow" id="overflow"></div>
+<!---overflow/-->
+
+<!--- Real Container Of Products-->
+<div class="invReal">
+<div class="mainProductContainer" id="mainProductContainer">
+    <button onclick="eliminate()" id="eliminate">X</button>
+    <div class="thumbnail">
+        <img src="">
+    </div>
+
+</div>
+</div>
+
+<!--fetchDone-->
+
+
+
+
+<div class="invmenu">
+    <div class="menuContainer" id="menucon">
+        <div class="menuChild">
+        <a href="#">Profile</a>
+        <a href="#">Help</a>
+        <div class="underbox">
+            
+            <button onclick="logout()" id="logout">Log out <i class='bx bx-log-out' ></i></button>
+        </div>
+    </div>
+</div>
+
+<!--cartcon-->
+<div class="invCart">
+    <div class="cartContainer" id="cartcon">
+        <ul id="list"></ul>
+    </div>
+</div>
+
+
+
+<!---cartconclose-->
+
+<!---search-wrapper-->
+
+<!--search-wrapper-close-->
+
+
+<!---featured1-->
+<div class="invf1" id="invf1">
+<div class="featured1" id="featured1">
+    <button onclick="cancelfeatured1()" id="cancelfeatured1">X</button>
+    <div id="count1"></div>
+
+   
+<div class="f1img">
+    <button onclick="f1arrow()" id="f1arrow"><i class='bx bx-right-arrow-alt'></i></button>
+    <button onclick="f1arrowback()" id="f1arrowback"><i class='bx bx-left-arrow-alt' ></i></button>
+    <img src="imgcard/ph-11134207-7qukx-lgnjnjg8t7mub4.jpg" id="image1">
+</div>
+
+</div>
+</div>
+<!--featured1-close-->
+<!--hiddencontainers/-->
+<!--deals-->
+<div class="invdeals">
+    <h1 id="dealsh1">DEALS</h1>
+    <div class="dealsContainer" id="dealsContainer">
+        <!--onclick=test1(product1, productName)-->
+        <div class="imgbox" onclick="featured1()" id="imgbox1">
+         
+            <img src="imgcard/ph-11134207-7qukx-lgnjnjg8t7mub4.jpg" alt="Sweater">
+            <div class="description">
+                <h1>SYZ New Unisex Plain Pullover Crew Neck Sweater for Men Women</h1>
+                <p>₱150</p>
+            </div>
+           
+        </div>
+
+        <div class="imgbox">
+            <img src="imgcard/ph-11134207-7r992-lo77tojkby3ead.jpg">
+            <div class="description">
+                <h1>Lenovo Legion Pro 7i</h1>
+                <p>₱150</p>
+            </div>
+           
+        </div>
+        <div class="imgbox">
+            <img src="imgcard/ph-11134207-7r98z-lnnqi342ajjd8a.jpg">
+            <div class="description">
+                <h1>Lenovo Legion Pro 7i</h1>
+                <p>₱150</p>
+            </div>
+           
+        </div>
+        <div class="imgbox">
+            <img src="imgcard/ph-11134207-7r98z-lnnqi342ajjd8a.jpg">
+            <div class="description">
+                <h1>Lenovo Legion Pro 7i</h1>
+                <p>₱150</p>
+            </div>
+           
+        </div>
+    
+        
+      
+   
+        <div class="undercontainer">
+            <h1>SALE SALE SALE SALE SALE SALE SALE SALE SALE</h1>
+            <h2>50% OFF 50% OFF 50% OFF 50% OFF 50% OFF 50% OFF 50% OFF 50% OFF</h2>
+        </div>
+    </div>
+  
+</div>
+<!--deals-->
+<!---mainshop-->
+<div class="invmainshop">
+    <div class="mainshopContainer" id="mainshopContainer">
+        <!--<div class="mainshopimgbox" id="mainshopimgbox">
+            <p id="discounted">5%</p>
+         <div class="mainshopdescription">
+                <h1></h1>
+                <p></p>
+                
+            </div>
+        </div>/!-->
+   
+
+  
+   
+    </div>
+</div>
+<!--mainshop-close-->
+
+<!--footer-->
+<div class="invfooter">
+<div class="footer">
+
+    <div class="mainfooter">
+        <ul>
+            <h3>About Us</h3>
+            <li><a href="#">PISALWAN Blog</a></li>
+            <li><a href="#">PISALWAN Careers</a></li>
+            <li><a href="#">PISALWAN Policies</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">PISALWAN Mall</a></li>
+            <li><a href="#">Seller Centre</a></li>
+            <li><a href="#">Flash Deals</a></li>
+            <li><a href="#">Media Contact</a></li>
+            <div class="cs">
+            <h3 >Customer Service</h3>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">PISALWAN Cares PH</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Free Shipping</a></li>
+            <li><a href="#">Return & Refund</a></li>
+            <li><a href="#">Overseas Product</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+        <div class="payment">
+            <h3>Payment</h3>
+            <div class="paymentContainer">
+                <img src="imgcard/visa-logo-800x450.jpg">
+                <img src="imgcard/Mastercard_logo.jpg">
+                <img src="imgcard/Maya_logo.jpg">
+                <img src="imgcard/dragonpay-1.png">
+                <img src="imgcard/0c27f9d6d4a1b54cbe382e1027b74dc5.png">
+                <img src="imgcard/EmblemColor.png">
+            </div>
+            
+        </div>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!---footer-close-->
+ 
+    <!--body/-->
+    <script src="authentication.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&family=Pixelify+Sans:wght@400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500;1,600&family=Quicksand:wght@700&family=Roboto+Condensed:wght@600&family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@800&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 400vh;
+}
+/*navflex*/
+.navflex{
+   
+    position: fixed;
+    color: rgb(99, 183, 99);
+    width: 100%;
+    height: 75px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.067);
+    background-color: white;
+    z-index: 988;
+    
+}
+.navflex ul li h1{
+    position: relative;
+    left: 250px;
+}
+.navflex ul li{
+    display: inline-block;
+    padding: 2px 30px ;
+    margin-top: 20px;
+}
+.navflex ul li a{
+    color: rgba(0, 0, 0, 0.676);
+    font-size: 1.2rem;
+    position: relative;
+    left: 250px;
+}
+
+.navflex ul li button{
+    position: relative;
+    left: 700px;
+    border: none;
+    color: rgba(0, 0, 0, 0.676);
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+.navflex ul li #menu{
+    background-color: rgba(205, 210, 222, 0.274);
+    border-radius: 20px;
+    text-align: center;
+    width: 140%;
+    height: 30px;
+    cursor: pointer;
+}
+.navflex ul li #searchinput{
+    position: relative;
+    left: 220px;
+    width: 560%;
+    height: 35px;
+    border-top-right-radius: 20px ;
+    
+    border: 1px solid rgba(0, 0, 0, 0.261);
+}
+#searchinput:focus{
+    outline: none;
+    border-color: #a0a0a0;
+}
+
+.navflex ul li #searchbtn{
+    background-color:rgb(36, 132, 63);
+    position: relative;
+    left: 745px;
+    top: 5px;
+    cursor: pointer;
+    border-top-right-radius: 20px ;
+    font-size: 1.8rem;
+    color: white;
+}
+/*navflex/*
+
+
+/* navside*/
+.invnav{
+margin-left: 275px;
+}
+.invnav .navside{
+    position: fixed;
+    top: 90px;
+    height: 2000px;
+    width: 10%;
+    z-index: 900;
+    background-color: rgb(255, 255, 255);
+   
+}
+.navside h3{
+    color: gray;
+}
+.navside ul li #recommended{
+    position: relative;
+    border: none;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: gray;
+}
+.navside .categoryline{
+    width: 100%;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.275);
+    height: 1px;
+}
+#categoryele{
+    position: relative;
+    top:-80px;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: gray;
+}
+#categoryele:hover{
+    transition: 0.2s ease;
+    background-color: rgba(204, 203, 208, 0.62);
+}
+.navside ul li {
+    list-style: none;
+}
+.navside li{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.1rem;
+   color: gray;
+    transition: 0.2s ease;
+}
+.navside li:hover{
+    transition: 0.2s ease;
+    background-color: rgba(204, 203, 208, 0.62);
+  
+}
+.navside ul  #more{
+    color: gray;
+    border: none;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+/* hiddenbtns*/
+#hiddenbtns{
+    display: none;
+}
+
+/*hiddenbnts*/
+/* navside/end*/
+
+/*featureds*/
+.invfc{
+    position: relative;
+    top:125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featuredContainer{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(14, 90, 52);
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, auto));
+    cursor: pointer;
+}
+.invfc .featuredContainer img{
+    height:250px;
+    width: 100%;
+    object-fit: cover;
+  
+}
+
+/*aads button*/
+#nad{
+    position: absolute;
+    left: 1400px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+   height: 100px;
+   background-color: rgba(0, 0, 0, 0.33);
+    
+  
+    transition: 0.2s ease;
+  color: white;
+    top: 220px;
+  
+
+}
+
+#nad:hover{
+    transition: 0.2s ease;
+   background-color: rgba(0, 0, 0, 0.456);
+}
+#nad1{
+    position: absolute;
+    left: 480px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+   height: 100px;
+   background-color: rgba(0, 0, 0, 0.33);
+    
+  
+    transition: 0.2s ease;
+  color: white;
+    top: 220px;
+  
+
+}
+
+#nad1:hover{
+    transition: 0.2s ease;
+   background-color: rgba(0, 0, 0, 0.456);
+}
+
+/*ads button-close*/
+/*featuredss/*
+/*hidden*/
+/*menu*/
+
+.menuContainer{
+    position: fixed;
+    top: 77px;
+    left:1500px;
+    width: 15%;
+    background-color: rgb(232, 235, 240);
+    height: 120px;
+    z-index: 1000;
+    border-radius: 3px;
+    margin-left: 20px;
+visibility:hidden;
+    display: flex;
+    justify-content: start;
+}
+.menuContainer .menuChild{
+    margin-top: 20px;
+    font-size: 1rem;
+   
+    margin-left: 10px;
+}
+
+.menuContainer .menuChild a{
+    color: rgb(81, 80, 80);
+    padding: 5px;
+display: flex;
+transition:  0.2s ease-in;
+}
+.menuChild a:hover{
+    transition: 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.085);
+    width: 400%;
+}
+.menuContainer .menuChild .underbox{
+    width: 400%;
+    background-color: rgb(186, 186, 186);
+    height:1px;
+  
+}
+.menuContainer .menuChild #logout{
+    border: none;
+margin-top: 13px;
+    color: rgb(81, 80, 80);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+/*cart */
+
+.cartContainer{
+    position: fixed;
+    top: 77px;
+    left:1250px;
+    background-color: rgb(235, 238, 243);
+    width: 20%;
+    height: 500px;
+    max-height: 500px;
+    z-index: 1000;
+    overflow: auto;
+    display: none;
+}
+.cartContainer ul li{
+    list-style: none;
+}
+.cartContainer li img{
+    height: 200px;
+    margin-top: 100px;
+}
+.cartContainer ul li #spanIndex{
+    color: red;
+  position: absolute;
+ top: 1px;
+
+    z-index: 1000;
+}
+/*cart-close*/
+/*menu*/
+
+/* featured1*/
+.invf1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invf1 .featured1{
+    width: 50%;
+    background-color:rgba(246, 246, 246, 0.99);
+    height: 500px;
+    z-index: 1200;
+    position: fixed;
+    margin-top:350px;
+    display: none;
+    border-radius: 20px;
+    
+}
+.featured1 .f1img img{
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 1px;
+}
+.featured1 .f1img #f1arrow{
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    left: 408px;
+    border: none;
+    height: 100px;
+    color: white;
+    background-color: rgba(22, 21, 21, 0.365);
+    transition: 0.2s ease;
+  
+  
+  
+}
+.featured1 .f1img #f1arrow:hover{
+    transition: 0.2s ease;
+    background-color: rgba(11, 11, 11, 0.496);
+}
+.featured1 .f1img #f1arrowback{
+    position: absolute;
+    font-size: 1.4rem;
+    height: 100px;
+    background-color: rgba(22, 21, 21, 0.365);
+    transition: 0.2s ease;
+    top: 200px;
+    left:30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+.featured1 .f1img #f1arrowback:hover{
+    transition: 0.2s ease;
+    background-color: rgba(11, 11, 11, 0.496);
+}
+.featured1 #cancelfeatured1{
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin-left:930px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+
+/*featured1-close*/
+/*hidden*/
+
+/* overflow*/
+.overflow{
+height: 1000px;
+width: 100%;
+background-color: rgba(20, 19, 19, 0.278);
+z-index: 1100;
+position: fixed;
+top: 1px;
+display: none;
+}
+/*overflow/*/
+
+
+
+/*deals*/
+.invdeals{
+position: relative;
+top: 125px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.invdeals .dealsContainer{
+width: 45.5%;
+
+height: 400px;
+background-color: rgb(40, 123, 55);
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 5%));
+
+
+gap: 0.2rem;
+
+
+}
+.invdeals  #dealsh1{
+    background-color: orange;
+    color: white;
+    height: 400px;
+}
+.dealsContainer .imgbox{
+
+ 
+
+ background-color: rgb(0, 0, 0);
+   height: 0px;
+   width: 100%;
+   border-radius: 20px;
+   cursor: pointer;
+
+}
+.dealsContainer .imgbox .description{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.211);
+    background-color: white;
+    
+    height:65px;
+    position: relative;
+    top: -10px;
+}
+.imgbox .description h1{
+    font-size: 0.8rem;
+    color: rgb(63, 61, 61);
+}
+.imgbox .description p{
+    color: rgb(58, 195, 58);
+}
+.dealsContainer .imgbox img{
+    height:270px;
+    width:100%;
+    object-fit: cover;
+    transition: 0.2s ease;
+}
+.dealsContainer .imgbox img:hover{
+    transition: 0.2s ease;
+    filter:contrast(50%);
+}
+.dealsContainer .undercontainer{
+    position: absolute;
+    top: 330px;
+    width: 45.5%;
+    height: 69px;
+    background-color: rgb(66, 75, 196);
+    overflow: hidden;
+}
+.dealsContainer .undercontainer h1{
+    color: white;
+    animation: sale 10s ease-in-out infinite;
+}
+.dealsContainer .undercontainer h2{
+    color: rgb(69, 255, 69);
+    animation: sale 10s ease-in-out infinite;
+}
+
+/*animation of undercontaner*/
+@keyframes sale{
+    0%{
+     transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(900px);
+    }
+}
+/*animation-end*/
+
+
+
+/*deals/*/
+
+/*mainshop*/
+.invmainshop{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.invmainshop .mainshopContainer{
+    width: 50%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    gap: 1rem;
+    margin-top: 150px;
+    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+}
+.mainshopContainer .mainshopimgbox{
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.092);
+   box-sizing: border-box;
+transition: 0.2s ease;
+border-radius:7px;
+ 
+ 
+    
+}
+.mainshopContainer .mainshopimgbox:hover{
+    transition: 0.2s ease;
+     transform: scale(1.1, 1.1);
+}
+
+.mainshopContainer .mainshopdescription{
+    background-color: rgb(255, 255, 255);
+ 
+    position: relative;
+    top: 200px;
+}
+.mainshopContainer .mainshopimgbox img{
+    height:200px;
+   object-fit: cover;
+    width: 100%;
+
+    transition: 0.2s ease;
+    
+
+}
+.mainshopContainer #discounted{
+  
+   position: relative;
+   top: 200px;
+    font-size: 1.2rem;
+width: 55%;
+    background-color: rgba(80, 255, 133, 0.767);
+    border-top-right-radius: 20px;
+}
+
+.mainshopContainer .mainshopimgbox .mainshopdescription{
+    font-size:0.5rem;
+}
+.mainshopdescription p{
+    font-size: 1.4rem;
+    color: rgb(41, 200, 41);
+
+}
+/*mainshop/*/
+
+/*footer*/
+.invfooter{
+    
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top:2200px;
+
+}
+.invfooter .footer{
+    width: 50%;
+    height: 2px;
+    margin-top: 75px;
+    background-color: rgb(237, 236, 236);
+}
+.invfooter .footer .mainfooter{
+    margin-top: 50px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    color: rgb(184, 184, 184);
+}
+.footer .cs{
+    position: absolute;
+    top:3226px;
+    left:800px;
+    margin-top: 50px;
+}
+.footer .payment{
+    position: absolute;
+    top:3226px;
+    left:1200px;
+    margin-top: 50px;
+}
+.payment .paymentContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    gap: 1.4rem;
+    
+}
+.payment .paymentContainer img{
+    height: 50px;
+    object-fit: contain;
+    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.186);
+    width: 100%;
+}
+/*footer-close*/
+
+/* fetchContainer*/
+.invReal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invReal .mainProductContainer{
+    width: 50%;
+    background-color:rgba(246, 246, 246, 0.99);
+    height: 500px;
+    z-index: 1200;
+    position: fixed;
+    margin-top:350px;
+   display: none;
+    border-radius: 20px;
+
+}
+.mainProductContainer .thumbnail img{
+    
+}
+.mainProductContainer #eliminate{
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin-left:930px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+/*done*/
+
+/*wrapper*/
+.invwrapper{
+    position: relative;
+    top:-225px;
+    left: 600px;
+}
+.wrapper{
+    width: 40%;
+    height: 200px;
+    background-color: rgb(231, 228, 243);
+    box-shadow: 0px 0px 2px rgba(139, 136, 136, 0.64);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 3000;
+    overflow: auto;
+    max-height: 2000px;
+    position: fixed;
+    
+}
+.invwrapper .wrapper .wrapperBox{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+
+}
+.wrapperBox .wrapperImg .descriptionWrapper{
+    background-color: white;
+    width: 95%;
+    margin-left: 10px;
+}
+.wrapper .wrapperBox img{
+    height:100px ;
+    width: 95%;
+    box-shadow: 0px 0px 2px rgb(162, 161, 161);
+    background-color: white;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-left: 9px;
+}
+/*done*/
+
+/*chatHelper*/
+.invChat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#chatIcon{
+    font-size: 2rem;
+    color: rgb(20, 255, 165);
+    z-index: 5000;
+    position: fixed;
+    top: 700px;
+  left: 1500px;
+   background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.431);
+    border-color: rgba(0, 0, 0, 0.355);
+    border-radius: 35px;
+    border-bottom-left-radius: 0px;
+    height: 35px;
+    
+    cursor: pointer;
+}
+
+/*chatContainer*/
+.invChatContainer{
+display: flex;
+justify-content: end;
+align-items: end;
+}
+#chatBotContainer{
+width:15%;
+height: 500px;
+background-color: rgb(255, 255, 255);
+box-sizing: border-box;
+border: solid 3px rgba(0, 0, 0, 0.12);
+border-radius: 10px;
+position: fixed;
+z-index: 5000;
+top: 410px;
+left:1600px;
+display: none;
+}
+#chatBotContainer .chatBotContainerChild{
+    color: rgb(20, 255, 165);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.267);
+}
+#chatBotContainer ul li{
+    list-style: none;
+    background-color: rgba(233, 235, 236, 0.726);
+}
+
+
+/*first Option*/
+#firstOption{
+    border:none;
+    font-size: 1.2rem;
+    width: 100%;
+    position: relative;
+    top: 432px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: rgb(104, 206, 147);
+}
+#firstOption:active{
+    transition: 0.2s ease;
+   transform:translateY(10px);
+}
+/*end/
+
+
+
+/*ned*/
+
+
+/*ChatDone*/

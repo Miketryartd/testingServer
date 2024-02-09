@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&family=Pixelify+Sans:wght@400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500;1,600&family=Quicksand:wght@700&family=Roboto+Condensed:wght@600&family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@800&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+/*title*/
+.nav{
+    position: absolute;
+    top: 25px;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 2px 50px;
+}
+
+   
+
+span{
+    color:rgba(99, 183, 99, 0.667);
+}
+.nav ul li a{
+ position: relative;
+ left: 1250px;
+ color:  rgb(99, 183, 99);
+}
+/*title/*
+/*designblock*/
+.designblock{
+    width: 100%;
+    background-color: rgba(18, 126, 47, 0.513);
+    height: 585px;
+   
+    color: white;
+    position: absolute;
+    top: 200px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.designblock p{
+    position: absolute;
+    left:30px;
+    margin-top: 150px;
+    font-size: 2rem;
+}
+.designblock h1{
+    margin-right: 1300px;
+    font-size: 5rem;
+}
+/*designblock/*
+/*logins*/
+.invLC{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    
+    margin-top: 250px;
+}
+.invLC .LogInClass{
+    position: absolute;
+    left: 1200px;
+    width: 25%;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogInClass p{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.271);
+}
+.invLC .LogInClass input{
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border: solid 2px rgba(0, 0, 0, 0.089);
+}
+.invLC .LogInClass #loginstyle{
+  
+   margin-top: 20px;
+   width: 20%;
+   height: 35px;
+   cursor: pointer;
+   border: none;
+   background-color: rgb(99, 183, 99);
+   color: white;
+   border-radius: 4px;
+   transition: 0.1s ease;
+}
+.invLC .LogInClass #loginstyle:hover{
+    transition: 0.1s ease;
+    background-color: rgba(99, 183, 99, 0.667);
+}
+.LogInClass a{
+    color: rgba(99, 183, 99, 0.667);
+}
+
+
+
+/*login/*
+/*signups*/
+.invLC{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    
+    margin-top: 250px;
+}
+.invLC .SignUpClass{
+    position: absolute;
+    left: 1200px;
+    width: 25%;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SignUpClass p{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.271);
+}
+.invLC .SignUpClass input{
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border: solid 2px rgba(0, 0, 0, 0.089);
+}
+.invLC .SignUpClass #signupstyle{
+  
+   margin-top: 20px;
+   width: 20%;
+   height: 35px;
+   cursor: pointer;
+   border: none;
+   background-color: rgb(99, 183, 99);
+   color: white;
+   border-radius: 4px;
+   transition: 0.1s ease;
+}
+.invLC .SignUpClass #signupstyle:hover{
+    transition: 0.1s ease;
+    background-color: rgba(99, 183, 99, 0.667);
+}
+.SignUpClass a{
+    color: rgba(99, 183, 99, 0.667);
+}
+
+/*signups*/
+/*footer*/
+.footer{
+    position: absolute;
+    top:785px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   
+    height: 270px;
+}
+.footer ul li{
+    display:flex;
+    justify-content: start;
+    padding: 2px 100px;
+}
+.footer ul li a{
+    color: rgba(0, 0, 0, 0.25);
+    transition: 0.1s ease;
+}
+.footer ul li a:hover{
+    transition: 0.1s ease;
+    text-decoration: underline;
+}
+.footer ul li .underline{
+    margin-top: 20px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.146);
+    width: 100%;
+}
+.footer .regions ul li{
+    display: inline-block;
+    padding: 2px 100px 50px;
+    color: rgba(0, 0, 0, 0.25);
+}
+.footer .cs{
+    position: absolute;
+    top: 1px;
+    left: 300px;
+}
+.footer .payment{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 310px));
+    
+  
+   
+}
+.footer .payment img{
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.124);
+   
+}
+/*footer-close*/
+
+/*media*/
+
+/*media*/
